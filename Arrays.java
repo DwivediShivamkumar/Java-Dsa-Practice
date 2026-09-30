@@ -2,16 +2,75 @@
 
 public class Arrays {
   public static void main(String[] args) {
-
-    int arr[] = { 2, 3, 10, 20 };
+    int[][] arr = {
+        { 1, 2, 3 }, { 5, 6, 3, 8 }, { 7, 8, 8, 9, 3 }, { 1, 2 },
+    };
     int n = arr.length;
-    int Multiplication = 1;
     for (int i = 0; i < n; i++) {
-      Multiplication *= arr[i];
-      // int value = arr[i];
-      // multi = multi * value;
+      int m = arr[i].length;
+      for (int j = 0; j < m; j++) {
+        System.out.print(arr[i][j] + " ");
+      }
+      System.out.println();
     }
-    System.out.println(Multiplication);
+    // for (int[] ans : arr) {
+    // for (int ele : ans) {
+    // System.out.print(ele + " ");
+    // }
+    // System.out.println();
+    // }
+
+    // // 2D-Arrays;
+    // // declaration
+    // int[][] arr;
+    // // Allocation
+    // arr = new int[3][4];
+    // // initiallization
+    // int[][] brr = {
+    // { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 2, 3, 4 },
+    // };
+    // int rowLength = brr.length;
+    // int colLength = brr[0].length;
+    // // System.out.println(brr[0][0]);
+    // for (int rowIndex = 0; rowIndex <= rowLength - 1; rowIndex++) {
+    // for (int colIndex = 0; colIndex <= colLength - 1; colIndex++) {
+    // System.out.print(brr[rowIndex][colIndex] + " ");
+    // }
+    // System.out.println();
+    // }
+
+    // int arr[] = { 2, -5, -99, 89, 95, -2 };
+    // int n = arr.length;
+    // int minValue = arr[0];
+    // for (int i = 0; i < n; i++) {
+    // if (arr[i] < minValue) {
+    // minValue = arr[i];
+    // }
+    // }
+    // System.out.println(minValue);
+
+    // int arr[] = { 5, -6, 87, 4, 89, 96 };
+    // int n = arr.length;
+    // int maxValue = arr[0];
+    // // compare the maxValue of the values of each element of the array;
+    // for (int i = 0; i < n; i++) {
+    // if (arr[i] > maxValue) {
+    // // update maxValue
+    // maxValue = arr[i];
+    // }
+    // }
+    // System.out.println(maxValue);
+
+    // int arr[] = { 2, 3, 10, 20 };
+    // int n = arr.length;
+    // // int Multiplication = 1;
+    // int ans = 1;
+    // for (int i = 0; i < n; i++) {
+    // // Multiplication *= arr[i];
+    // int value = arr[i];
+    // ans = ans * value;
+    // }
+    // System.out.println(ans);
 
     // int arr[] = { 20, 30, 40, 50, 60 };
     // int n = arr.length;
