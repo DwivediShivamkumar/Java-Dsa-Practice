@@ -1,18 +1,65 @@
-// import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Arrays {
   public static void main(String[] args) {
+
     int[][] arr = {
-        { 1, 2, 3 }, { 5, 6, 3, 8 }, { 7, 8, 8, 9, 3 }, { 1, 2 },
+        { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 3, 2, 1 },
     };
-    int n = arr.length;
-    for (int i = 0; i < n; i++) {
-      int m = arr[i].length;
-      for (int j = 0; j < m; j++) {
-        System.out.print(arr[i][j] + " ");
+    int multi = 1;
+    for (int i = 0; i < arr.length; i++) {
+      for (int j = 0; j < arr[i].length; j++) {
+        multi *= arr[i][j];
       }
-      System.out.println();
     }
+    System.out.println(multi);
+
+    // int[][] arr = {
+    // { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 3, 2, 1 },
+    // };
+    // int sum = 0;
+    // for (int i = 0; i < arr.length; i++) {
+    // for (int j = 0; j < arr[i].length; j++) {
+    // sum += arr[i][j];
+    // }
+    // }
+    // System.out.println(sum);
+
+    // int[][] arr = new int[3][4];
+    // Scanner sc = new Scanner(System.in);
+    // // for input
+    // for (int i = 0; i < arr.length; i++) {
+    // for (int j = 0; j < arr[i].length; j++) {
+    // System.out.println("Enter the value of row " + i + " and the value of column
+    // " + j);
+    // arr[i][j] = sc.nextInt();
+    // }
+    // }
+    // for printing it.
+    // for (int i = 0; i < arr.length; i++) {
+    // for (int j = 0; j < arr[i].length; j++) {
+    // System.out.print(arr[i][j] + " ");
+    // }
+    // System.out.println();
+    // }
+
+    // int[][] arr = {
+    // { 1, 2, 3 }, { 5, 6, 3, 8 }, { 7, 8, 8, 9, 3 }, { 1, 2 },
+    // };
+    // for (int i = 0; i <= arr.length - 1; i++) {
+    // for (int j = 0; j <= arr[i].length - 1; j++) {
+    // System.out.print(arr[i][j] + " ");
+    // }
+    // System.out.println();
+    // }
+    // int n = arr.length;
+    // for (int i = 0; i < n; i++) {
+    // int m = arr[i].length;
+    // for (int j = 0; j < m; j++) {
+    // System.out.print(arr[i][j] + " ");
+    // }
+    // System.out.println();
+    // }
     // for (int[] ans : arr) {
     // for (int ele : ans) {
     // System.out.print(ele + " ");
