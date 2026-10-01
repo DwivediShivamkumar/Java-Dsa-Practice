@@ -3,16 +3,53 @@
 public class Arrays {
   public static void main(String[] args) {
 
-    int[][] arr = {
-        { 1, 2, 3 }, { 4, 55, 6 }, { 7, 8, 91 }, { 3, 2, 1 },
-    };
-    int multi = 1;
-    for (int i = 0; i < arr.length; i++) {
-      for (int j = 0; j < arr[i].length; j++) {
-        multi *= arr[i][j];
-      }
+    // Reverse of an array
+
+    int[] arr = { 1, 2, 3, 4, 5, 6 };
+
+    int start = 0, end = arr.length - 1;
+    while (start < end) {
+      int temp = arr[start];
+      arr[start] = arr[end];
+      arr[end] = temp;
+      start++;
+      end--;
     }
-    System.out.println(multi);
+    System.out.println("The reverse of the array is: ");
+    for (int val : arr) {
+      System.out.print(val + " ");
+    }
+
+    // int[][] arr = {
+    // { 1, 2, 3 }, { 21, -2, 3 }
+    // };
+
+    // int minValue = arr[0][0];
+    // for (int i = 0; i < arr.length; i++) {
+    // for (int j = 0; j < arr[i].length; j++) {
+    // if (minValue > arr[i][j]) {
+    // minValue = arr[i][j];
+    // }
+    // }
+    // }
+    // System.out.println(minValue);
+
+    // int maxValue = arr[0][0];
+    // for (int i = 0; i < arr.length; i++) {
+    // for (int j = 0; j < arr[i].length; j++) {
+    // if (maxValue < arr[i][j]) {
+    // maxValue = arr[i][j];
+    // }
+    // }
+    // }
+    // System.out.println(maxValue);
+    // int multi = 1;
+    // for (int i = 0; i < arr.length; i++) {
+    // for (int j = 0; j < arr[i].length; j++) {
+    // multi *= arr[i][j];
+    // }
+    // }
+    // System.out.println(multi);
 
     // int[][] arr = {
     // { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 3, 2, 1 },
