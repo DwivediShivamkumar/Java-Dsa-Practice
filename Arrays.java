@@ -4,7 +4,7 @@ public class Arrays {
   public static void main(String[] args) {
 
     int[][] arr = {
-        { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 3, 2, 1 },
+        { 1, 2, 3 }, { 4, 55, 6 }, { 7, 8, 91 }, { 3, 2, 1 },
     };
     int multi = 1;
     for (int i = 0; i < arr.length; i++) {
